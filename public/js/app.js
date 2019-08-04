@@ -11594,7 +11594,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.jumbotron{\n    background-color:transparent !important\n}\n", ""]);
+exports.push([module.i, "\n.jumbotron{\n    background-color:transparent !important\n}\n.searchBar{\n    display:none;\n}\n", ""]);
 
 // exports
 
@@ -61412,53 +61412,55 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c(
-              "form",
-              { staticClass: "form-inline my-2 my-lg-0" },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.search,
-                      expression: "search"
-                    }
-                  ],
-                  staticClass: "form-control mr-sm-2",
-                  attrs: {
-                    type: "search",
-                    placeholder: "Enter a film name ...",
-                    "aria-label": "Search"
-                  },
-                  domProps: { value: _vm.search },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.search = $event.target.value
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  { attrs: { to: "/search?s=" + _vm.search } },
+            this.$route.name != "Home"
+              ? _c(
+                  "form",
+                  { staticClass: "searchBar form-inline my-2 my-lg-0" },
                   [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-outline-success my-2 my-sm-0",
-                        attrs: { type: "submit" }
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.search,
+                          expression: "search"
+                        }
+                      ],
+                      staticClass: "form-control mr-sm-2",
+                      attrs: {
+                        type: "search",
+                        placeholder: "Enter a film name ...",
+                        "aria-label": "Search"
                       },
-                      [_vm._v("Search")]
+                      domProps: { value: _vm.search },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.search = $event.target.value
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/search?s=" + _vm.search } },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-outline-success my-2 my-sm-0",
+                            attrs: { type: "submit" }
+                          },
+                          [_vm._v("Search")]
+                        )
+                      ]
                     )
-                  ]
+                  ],
+                  1
                 )
-              ],
-              1
-            )
+              : _vm._e()
           ]
         )
       ],

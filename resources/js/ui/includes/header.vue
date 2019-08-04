@@ -13,7 +13,7 @@
         <router-link v-else class="nav-link" to="/activity">My comments</router-link>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form v-if="this.$route.name != 'Home'" class="searchBar form-inline my-2 my-lg-0">
       <input v-model="search" class="form-control mr-sm-2" type="search" placeholder="Enter a film name ..." aria-label="Search">
       <router-link  :to="'/search?s=' + search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

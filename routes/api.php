@@ -18,3 +18,4 @@ Route::middleware('auth:user')->prefix('v1/')->group(function () {
 Route::get('/login',function(){
     return ('Login Fail !!!');
 })->name('login');
+    

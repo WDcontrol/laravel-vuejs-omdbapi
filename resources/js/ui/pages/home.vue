@@ -17,20 +17,21 @@
 
 
 <script>
-
     export default {
         name:"home",
         data(){
             return{
-                search:null
+                search:null,
             }
-        },
-        
+        }
     }
     
 </script>
 <style>
     .jumbotron{
         background-color:transparent !important
+    }
+    .searchBar{
+        display:none;
     }
 </style>
