@@ -11,7 +11,7 @@
                             <v-radio label="Sign Up" value="signUp"></v-radio>
                         </v-radio-group>
                         <v-img height="250px" width="250px" style="border-radius: 50%;"
-                            src="https://pbs.twimg.com/profile_images/975742647200550914/ZkmFKUq__400x400.jpg">
+                            src="https://image.noelshack.com/fichiers/2019/32/1/1564964304-filme-logo.png">
                             <template v-slot:placeholder>
                                 <v-layout
                                         fill-height

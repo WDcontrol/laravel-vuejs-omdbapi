@@ -61379,7 +61379,7 @@ var render = function() {
       { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
       [
         _c("router-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
-          _vm._v("AppnDigital")
+          _vm._v("Filme")
         ]),
         _vm._v(" "),
         _vm._m(0),
@@ -62364,7 +62364,7 @@ var render = function() {
                       height: "250px",
                       width: "250px",
                       src:
-                        "https://pbs.twimg.com/profile_images/975742647200550914/ZkmFKUq__400x400.jpg"
+                        "https://image.noelshack.com/fichiers/2019/32/1/1564964304-filme-logo.png"
                     },
                     scopedSlots: _vm._u([
                       {
